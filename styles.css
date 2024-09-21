@@ -1,3 +1,4 @@
+
 .title {
     display: flex;
     justify-content: center;
@@ -6,6 +7,7 @@
     color: #587b87;
     padding: 10px;
     width: 20%;
+    font-family: Arial, Helvetica, sans-serif;
 
   }
   .body {
@@ -15,8 +17,9 @@
     margin: auto;
     background-color: #587b87;
     width: 80%;
-    height: 1000px;
+    height: 850px;
     border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;;
   }
   .left {
     align-self: left;
@@ -45,7 +48,7 @@
     font-weight:bold;
   }
   .titleText {
-    height: 2%;
+    
     background-color: white;
     border-radius: 25px;
     padding: 5%;
@@ -59,14 +62,14 @@
     resize: none;
     box-sizing: border-box;
     border-radius: 25px;
-    padding: 1%;
+    padding: 4%;
   }
 
   .textbox {
     height: 40%;
     background-color: white;
     border-radius: 25px;
-    padding: 1%;
+    padding: 0%;
   }
   .textbox textarea {
     width: 100%;
@@ -97,6 +100,15 @@
     gap:10px;
   }
 
+  button:hover{
+    background-color: #90b2bd;
+    color: white;
+  }
+
+  button:active{
+    background-color: #647b83;
+    color: white;
+  }
   .recipeButton{
     border: none;
     border-radius: 20px;
@@ -107,6 +119,8 @@
     color: #587b87;
     gap:10px;
   }
+
+
 
   .recipeItem {
     border: 1px solid #587b87; 
