@@ -1,10 +1,13 @@
-
+body{
+    background: rgb(100,208,249);
+    background: linear-gradient(0deg, rgba(100,208,249,1) 0%, rgba(10,5,164,1) 100%);
+}
 .title {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    color: #587b87;
+    color: white;
     padding: 10px;
     width: 20%;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +18,7 @@
     justify-content: center;
     align-items: top;
     margin: auto;
-    background-color: #587b87;
+    background-color: transparent;
     width: 80%;
     height: 850px;
     border-radius: 25px;
@@ -48,7 +51,7 @@
     font-weight:bold;
   }
   .titleText {
-    
+    height: 5%;
     background-color: white;
     border-radius: 25px;
     padding: 5%;
@@ -62,7 +65,7 @@
     resize: none;
     box-sizing: border-box;
     border-radius: 25px;
-    padding: 4%;
+    padding: 1%;
   }
 
   .textbox {
@@ -96,12 +99,15 @@
     height: 50px;
     padding: 10px;
     font-weight: bold;
-    color: #587b87;
+    color: #152054;
     gap:10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
   }
 
   button:hover{
-    background-color: #90b2bd;
+    background: rgb(100,208,249);
+background: linear-gradient(0deg, rgba(100,208,249,1) 0%, rgba(10,5,164,1) 100%);
     color: white;
   }
 
@@ -109,6 +115,8 @@
     background-color: #647b83;
     color: white;
   }
+
+
   .recipeButton{
     border: none;
     border-radius: 20px;
@@ -116,14 +124,16 @@
     height: 30px;
     padding: 5px;
     font-weight: bold;
-    color: #587b87;
+    color: #152054;
     gap:10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
   }
 
 
 
   .recipeItem {
-    border: 1px solid #587b87; 
+    border: 1px solid #152054; 
     border-radius: 15px;
     padding: 10px;           
     margin-bottom: 10px;    
@@ -131,7 +141,68 @@
     max-height: 150px; 
     overflow: auto;
     word-wrap: break-word;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    
   }
+  .recipeItem:hover{
+    background-color: rgb(30, 54, 150);
+    color: white;
+  }
+
+  .recipeItem:active{
+    background-color: #112d80;s
+    color: white;
+  }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    top:0;
+    left:0;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow-x:hidden;
+    word-wrap: break-word;
+
+  }
+
+
+
+.modal-content{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 35%;
+    height:60%;
+    max-width: 80%; /* Prevent the modal from getting too wide */
+    max-height: 80%; /* Prevent it from becoming too tall */
+    overflow-x: hidden; /* Enable scroll if content exceeds height */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position:relative;
+
+}
+
+
+.close{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right:10px;
+    font-size:20px;
+    color:black;
+}
+
+.close:hover{
+    font-weight:bold;
+}
+
+
+
 
 
   
